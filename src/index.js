@@ -19,7 +19,7 @@ client.on('ready', () => {
 // Welcome message
 client.on('guildMemberAdd', member => {
   // #bot channel ID
-  const channel = member.guild.channels.cache.find(channel => channel.id === '690859062136406077')
+  const channel = member.guild.channels.cache.get('690859062136406077')
   if(!channel) return;
 
   channel.send(`Welcome to Stallone's Speakeasy, ${member}! 🥂 Be sure to check out the <#691991371556454410> channel.`)

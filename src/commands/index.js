@@ -21,7 +21,7 @@ module.exports = async (msg) => {
 
     if (msg.channel.guild.id === guild_id) {
         // Split up arguments
-        const args = msg.content.split(' ');
+        const args = msg.content.split(/ +/);
         // Check to ensure there are arguments && a ! prefix
         if (args.length == 0 || args[0].charAt(0) !== '!') return;
         // Grab command, remove bang
