@@ -1,14 +1,14 @@
 require('dotenv').config();
 const clear = require('./clear')
 const hey = require('./hey')
-const version = require('./version')
+const info = require('./info')
 const whois = require('./whois')
 
 // Similar to TypeScript Enums 😃
 const commands = {
     clear,
     hey,
-    version,
+    info,
     whois
 };
 
