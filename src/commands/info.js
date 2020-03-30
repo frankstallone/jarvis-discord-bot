@@ -6,8 +6,7 @@ module.exports = async (msg, args) => {
 	.setColor('#0099ff')
 	.setTitle(`Server Info: Stallone's Speakeasy`)
 	.setAuthor('Frank Stallone', 'https://stallone.dev')
-  .setDescription(`Where everybody knows your nameB118abaa045!
-  `)
+  .setDescription(`Where everybody knows your name`)
 	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
 	.addFields(
 		{ name: `Created`, value: `March 2020` },
@@ -22,5 +21,4 @@ module.exports = async (msg, args) => {
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 
 await msg.channel.send(exampleEmbed);
-  // await msg.channel.send(`(J.A.R.V.I.S.) Version `);
 };
