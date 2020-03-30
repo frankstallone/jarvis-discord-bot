@@ -17,6 +17,7 @@ module.exports = async (msg, args) => {
 
     // Get mentioned members ID
     const guildMember = msg.mentions.members.first();
+    // TODO: Needs fallback fro when nickname = null
     const nickname = msg.mentions.members.first().nickname;
     // Get mentioned role's ID
     const role = msg.member.guild.roles.cache.find(role => role.name === `${args[1]}`);
